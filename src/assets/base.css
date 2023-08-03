@@ -1,0 +1,43 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --primary-blue: #5c598e;
+  --primary-hover: #9d9bf1;
+  --primary-red: #f04438;
+  --primary-green: #0d894f;
+
+  --ring-blue: rgba(0, 212, 255, 0.05);
+  --main-color: rgba(0, 212, 255, 0.65);
+  --main-dark-color: rgba(9, 9, 121, 0.65);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./Roboto/Roboto-Regular.ttf');
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn_submit {
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: small;
+  white-space: nowrap;
+}
+
+.over_view_section {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(0,212,255,1);
+  margin: 10px 0px;
+  border-left: solid 10px rgba(9,9,121,1);
+  color: #fff;
+}
+
+select {
+  border: solid 1px #f0f0f1;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+}
