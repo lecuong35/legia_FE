@@ -70,8 +70,8 @@
 
                         <div class="flex gap-[5px] pb-[4px]">
                             <p>Voucher:</p>
-                            <div v-if="bill.voucher != null">
-                                bill.voucher.value
+                            <div v-if="bill.voucher_id != null">
+                                {{(100 - bill.voucher.value*100)}}%
                             </div>
                             <div v-else class="text-[var(--primary-red)]">Không áp dụng voucher</div>
                         </div>

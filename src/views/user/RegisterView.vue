@@ -10,7 +10,7 @@
               class="form_fill h-full shrink-1 grow-0 basis-1/2
               flex justify-center items-center">
               <img
-                src="../../../logo_no_background.png"
+                src="@@/logo_no_background.png"
                 class="xl:w-[80%] md:w-[40%] lg:w-[70%] sm:w-[30%] mobile:w-[40%] py-[10px]"
                 alt="Sample image" />
             </div>

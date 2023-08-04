@@ -79,12 +79,12 @@
                     <div class="mobile:flex items-center justify-between">
                         <a href="https://www.facebook.com/le.cuong.104855" target="_blank" rel="noopener noreferrer">
                             <div class="flex items-center gap-[4px]">
-                                <img src="../../../zalo.png" alt="" class="w-[70px] mobile:w-[50px]">
+                                <img src="@@/zalo.png" alt="" class="w-[70px] mobile:w-[50px]">
                             </div>
                         </a>
                         <a href="https://www.facebook.com/le.cuong.104855" target="_blank" rel="noopener noreferrer">
                             <div class="flex items-center gap-[4px]">
-                                <img src="../../../facebook.png" alt="" class="w-[60px] mobile:w-[50px]">
+                                <img src="@@/facebook.png" alt="" class="w-[60px] mobile:w-[50px]">
                             </div>
                         </a>
                     </div>

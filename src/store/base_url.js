@@ -1,6 +1,6 @@
 import router from '../router' ;
 import ls from 'localstorage-slim'
-// const baseUrl = 'https://68bb-2001-ee0-4001-bfa1-6df2-96d1-95e2-89b4.ngrok-free.app'
+// const baseUrl = 'https://phutunglegia.pro.vn/server'
 const baseUrl = 'http://localhost:8000'
 const URL_user = baseUrl + '/api/user/';
 const URL_admin = baseUrl + '/api/admin/';

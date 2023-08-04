@@ -13,7 +13,7 @@
         <div class="flex items-center justify-between px-[20px] py-[10px]
         mobile:hidden sm:hidden md:flex lg:flex xl:flex">
             <div class="flex items-center justify-start gap-[10px]">
-                <img src="../../../logo_no_background.png" alt="" class="w-[30px]">
+                <img src="@@/logo_no_background.png" alt="" class="w-[30px]">
                 <div>
                     <p class="title text-xl">
                         Phụ tùng ô tô chính hãng Lê Gia Autoparts
@@ -76,7 +76,7 @@
                     <div class="relative">
                         <div class="user flex gap-[4px] items-center">
                             <div class="relative">
-                                <img src="../../../istockphoto-1340642632-170667a.jpg" alt="" class="w-[30px] h-[30px] rounded-[100%]">
+                                <img src="@@/istockphoto-1340642632-170667a.jpg" alt="" class="w-[30px] h-[30px] rounded-[100%]">
                                 <div v-if="notifications.length > 0" class="absolute top-[-10px] left-[-10px]">
                                     <font-awesome-icon icon="envelope" color="red" />
                                 </div>

@@ -35,7 +35,7 @@
             data-te-carousel-item
             style="backface-visibility: hidden">
             <img
-            src="../../../banner_blue.png"
+            src="@@/banner_blue.png"
             class="block w-full"
             alt="..." />
 
@@ -46,7 +46,7 @@
             data-te-carousel-item
             style="backface-visibility: hidden">
             <img
-            src="../../../banner_black.png"
+            src="@@/banner_black.png"
             class="block w-full"
             alt="..." />
 

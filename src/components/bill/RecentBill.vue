@@ -86,7 +86,7 @@
                             @click="hidden_modal(bill.id)">
                                 <font-awesome-icon icon="pen-to-square" color="rgba(#fff,0.5)"  />
                             </button>
-                            <button v-if="bill.status != 'CANCELLED'"
+                            <button v-if="bill.status == 'PENDING'"
                             class="px-[8px] py-[4px] rounded-md border bg-[var(--primary-red)] text-white w-fit"
                             @click="cancel_bill(bill.id, bill)">
                                 <font-awesome-icon icon="trash" color="rgba(#fff,0.5)"  />

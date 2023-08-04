@@ -11,7 +11,7 @@
             Doanh thu tháng này:
             <span>
               {{
-                data_chart[this_month]
+                Math.round(data_chart[this_month]*1000) / 1000
               }} triệu đồng
             </span>
           </p>

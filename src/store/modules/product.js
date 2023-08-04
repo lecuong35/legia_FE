@@ -216,16 +216,10 @@ const actions = {
         try {
             await base_url.importProduct(product_import)
             .then(() => {
-                toast.success("Them thanh cong!");
+                toast.success("Thêm thành công!");
             })
         } catch (error) {
-            if (error.response != null){
-                commit('SET_ERRORS', error.response.data.message);
-                toast.error(error.response.data.message);
-           }
-            else {
-                toast.warning("Thực hiện không thành công!");
-            }
+            toast.warning("File tải lên không đúng!");
         }
     },
 

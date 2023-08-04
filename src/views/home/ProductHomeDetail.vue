@@ -150,10 +150,10 @@ export default defineComponent({
             }
         }
 
-        watch(cart_item.quantity, () => {
-            if(cart_item.quantity < 2)
-                cart_item.quantity = 1;
-        })
+        // watch(cart_item.quantity, () => {
+        //     if(cart_item.quantity < 2)
+        //         cart_item.quantity = 1;
+        // })
 
         const addToCart = () => {
             user.value = store.getters['user/user'];

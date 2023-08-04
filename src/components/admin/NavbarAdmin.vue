@@ -4,7 +4,7 @@
         <!-- logo -->
         <div class="flex items-center gap-[5px] px-[10px] py-[10px] hover:cursor-pointer" @click="redirect_to('home')">
             <div>
-                <img src="../../../public/favicon_logo.png" alt="logo"
+                <img src="@@/favicon_logo.png" alt="logo"
                 class="xl:w-[65px] lg:w-[65px] md:w-[65px] sm:w-[30px] mobile:w-[30px]">
             </div>
             <div class="xl:block lg:block md:block sm:flex mobile:flex
