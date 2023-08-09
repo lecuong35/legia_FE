@@ -29,7 +29,7 @@ const mutations = {
     },
 
     CREATE_CATEGORY(state, category) {
-        console.log(category);
+        //(category);
         state.categories.push(category);
     },
 
@@ -87,7 +87,7 @@ const actions = {
     async createCategory({commit}, category) {
         try {
             await base_url.createCategory(category).then((result) => {
-                console.log(result.data);
+                //(result.data);
                 toast.success("Thêm thành công");
                 commit('CREATE_CATEGORY', result.data);
             })

@@ -157,7 +157,7 @@ import { useToast } from 'vue-toastification';
             })
 
             auth_user.value = props.user;
-            console.log(props.user.name != null);
+            //(props.user.name != null);
             if (props.user.name != null) {
                 logined.value = true;
             }
@@ -192,7 +192,7 @@ import { useToast } from 'vue-toastification';
             const click_toggle = () => {
                 var ele = document.getElementById("navbar_user_toggle");
                 var display = ele.style.display;
-                console.log(display);
+                //(display);
                 if(display == "none" || display == "") {
                     ele.style.display = "block";
                 }else {

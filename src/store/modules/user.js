@@ -34,7 +34,7 @@ const actions = {
     getUser({commit}, user) {
         base_url.userLogin('login', user).then((result) => {
             var user = result.data;
-            console.log(user);
+            //(user);
             commit('SET_USER', user);
             router.push({name: 'home'});
         }).catch((err) => {
@@ -86,7 +86,7 @@ const actions = {
             })
         } catch (error) {
             toast.warning(error.response.data.message);
-            console.log(error);
+            //(error);
         }
     },
 

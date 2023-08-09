@@ -256,7 +256,7 @@
 			const setImages = () => {
 				var images = document.getElementById('images_input');
 				for (var image of images.files) {
-					console.log(image);
+					//(image);
 					files.value.push(URL.createObjectURL(image))
 					file_uploaded.value.push(image);
 				}
@@ -269,7 +269,7 @@
 					}
 					else {
 						file_uploaded.value.splice(index,1);
-						console.log(file_uploaded.value.length);
+						//(file_uploaded.value.length);
 					}
 				})
 			}

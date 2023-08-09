@@ -136,7 +136,7 @@
                         brand = store.getters['brand/current_brands'](id);
                         new_brand.name = brand.name;
                         new_brand.id = id;
-                        console.log(brand);
+                        //(brand);
 
                         label_name.value = 'Tên thương hiệu ' + brand.id;
                         products.value = brand.products;

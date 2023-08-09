@@ -127,7 +127,7 @@ export default {
       try {
         await store.dispatch('bill/getBills', ['null', 1, 'all']);
         var response = store.getters['bill/all_bills'];
-        console.log(response);
+        //(response);
         response = Object.entries(response);
         data_chart.value.fill(0);
         response.map(bill => {
@@ -151,11 +151,11 @@ export default {
           }
         });
         chartData.datasets[0].data = [...data_chart.value];
-        console.log(chartData.datasets[0].data);
+        //(chartData.datasets[0].data);
         loaded.value = true;
 
       } catch (error) {
-        console.log(error);
+        //(error);
       }
     };
     fetch_data(year.value);

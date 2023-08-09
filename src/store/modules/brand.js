@@ -83,7 +83,7 @@ const actions = {
     async createBrand({commit}, brand) {
         try {
             await base_url.createBrand(brand).then((result) => {
-                console.log(result.data);
+                //(result.data);
                 toast.success("Thêm thành công !");
                 commit('CREATE_BRAND', result.data);
             })

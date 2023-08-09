@@ -31,7 +31,7 @@ export default defineComponent ({
             if (logged_in.value) {
                 await store.dispatch('user/getUserInfo').then(() => {
                     user.value = store.getters['user/user'];
-                    console.log(user.value);
+                    //(user.value);
                     if (user.value.length == 0) {
                         router.push({name: 'login'});
                         toast.warning("Ban chua dang nhap!");

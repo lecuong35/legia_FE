@@ -96,7 +96,7 @@ import { useStore } from 'vuex';
             const store  = useStore();
             var imgs = ref();
             imgs.value = props.carousel_images;
-            console.log(imgs.value);
+            //(imgs.value);
             onMounted(() => {
                 initTE({ Carousel });
                 images.value = imgs.value.filter((image, index) => {
@@ -113,7 +113,7 @@ import { useStore } from 'vuex';
                         return image;
                     }
                 });
-                console.log(imgs.value[0]);
+                //(imgs.value[0]);
             })
 
             const getImageUrl = (image) => {

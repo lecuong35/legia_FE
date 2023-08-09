@@ -129,7 +129,7 @@
 			errors.value = store.getters['voucher/errors']
 			watch(() =>store.getters['voucher/errors'], () => {
 				errors.value = store.getters['voucher/errors'];
-				console.log(errors);
+				//(errors);
 			})
 
 			var voucher = ref();

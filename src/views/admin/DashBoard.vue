@@ -53,7 +53,7 @@
             const loaded = ref(false);
             const toast = useToast();
 
-            onBeforeMount(() => {
+            onMounted(() => {
                 const admin_token = store.getters['admin/token'];
                 loaded.value = admin_token == null? false : true;
 

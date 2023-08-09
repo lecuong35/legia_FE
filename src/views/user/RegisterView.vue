@@ -102,7 +102,7 @@
             var errors = ref([]);
             watch(() => store.getters['user/errors'], () => {
                 errors.value = store.getters['user/errors'];
-                console.log(errors.value);
+                //(errors.value);
             });
             const password_placeholder = ref("Mật khẩu");
             const label = reactive({

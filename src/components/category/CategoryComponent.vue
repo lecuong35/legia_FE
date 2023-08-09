@@ -134,7 +134,7 @@
             };
 
             const submit = async () => {
-                console.log(new_category);
+                //(new_category);
                 await store.dispatch('category/createCategory', new_category).then(() => {
                     loaded.value = false;
                     categories.value = store.getters['category/categories'];

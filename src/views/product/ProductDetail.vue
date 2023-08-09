@@ -300,7 +300,7 @@
 				for (var image of images.files) {
 					files.value.push(URL.createObjectURL(image))
 					file_uploaded.value.push(image);
-					console.log(file_uploaded.value.length);
+					//(file_uploaded.value.length);
 				}
 			}
 
@@ -311,7 +311,7 @@
 					}
 					else {
 						file_uploaded.value.splice(index,1);
-						console.log(file_uploaded.value.length);
+						//(file_uploaded.value.length);
 					}
 				})
 			}

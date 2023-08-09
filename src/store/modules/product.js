@@ -102,7 +102,7 @@ const mutations = {
             if (product.id != id)
                 return product
         });
-        console.log(id);
+        //(id);
     },
 
     SET_GOOD_PRODUCT(state, products) {
@@ -116,7 +116,7 @@ const mutations = {
             return product;
         });
 
-        console.log(state.good_products);
+        //(state.good_products);
     }
 }
 
@@ -171,10 +171,10 @@ const actions = {
             await base_url.getDefineProduct(id)
             .then(async (result) => {
                 await commit('GET_DIFINE_PRODUCT', result.data);
-                console.log(result.data);
+                //(result.data);
             })
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     },
 
@@ -194,7 +194,7 @@ const actions = {
     },
 
     async addProduct({commit}, product) {
-        console.log(product);
+        //(product);
         try {
             await base_url.addProduct(product)
             .then(() => {

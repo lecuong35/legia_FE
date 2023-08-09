@@ -60,7 +60,7 @@
             //         approved_bills.value = store.getters['bill//recent_approved_bills'];
             //         cancelled_bills.value = store.getters['bill//recent_cancelled_bills'];
 
-            //         console.log(pending_bills.value);
+            //         //(pending_bills.value);
             //     });
             // })
 

@@ -36,7 +36,7 @@ export default defineComponent ({
             if (logged_in.value) {
                 await store.dispatch('user/getAdmin').then(() => {
                     user.value = store.getters['admin/admin'];
-                    console.log(user.value);
+                    //(user.value);
                     if (user.value.length == 0) {
                         router.push({name: 'admin-login'});
                         toast.warning("Ban chua dang nhap!");

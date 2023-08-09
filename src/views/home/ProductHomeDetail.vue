@@ -115,7 +115,7 @@ export default defineComponent({
                 brand: product.value.brand_id,
             }).then(() => {
                 related_product.value = store.getters['product/recent_search_products'].data;
-                console.log(related_product.value);
+                //(related_product.value);
                 related.value = true;
             })
         });

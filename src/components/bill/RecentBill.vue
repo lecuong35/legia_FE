@@ -49,15 +49,15 @@
                     <th>Hành động</th>
                 </thead>
                 <tbody class="text-center text-[14px] leading-[18px]">
-                    <tr v-for="bill in bills" :key="bill.id"
+                    <tr v-for="(bill, index) in bills" :key="bill.id"
                     :id="'bill'+bill.id">
                         <td class="mobile:hidden">{{bill.id}}</td>
                         <td class="mobile:hidden">{{bill.user.name}}</td>
                         <td>
                             <p class="whitespace-nowrap">
-                                {{bills[0].products[0].name.slice(0,15)}}...
+                                {{bills[index].products[0].name.slice(0,15)}}...
                                 <span class="text-[10px]">
-                                   x {{ bills[0].cart_items[0].quantity }}
+                                   x {{ bills[index].cart_items[0].quantity }}
                                 </span>
                             </p>
                             <div v-if="bill.products[1]">
@@ -215,7 +215,7 @@ import router from '../../router';
                 var  response = [];
                 if(status_bills.value == 'PENDING') {
                     response = store.getters['bill/recent_pending_bills'];
-                    console.log(response.data[0].products[0].name);
+                    //(response.data[0].products[0].name);
                 }
                 else if (status_bills.value == 'APPROVED') {
                     response = store.getters['bill/recent_approved_bills'];
@@ -232,8 +232,8 @@ import router from '../../router';
 
             const reload = () => {
                 loaded.value = true;
-                // console.log(loaded.value);
-                // console.log(loaded.value);
+                // //(loaded.value);
+                // //(loaded.value);
                 // loaded.value = true;
             };
 
@@ -245,7 +245,7 @@ import router from '../../router';
                     var response = [];
                     if(status_bills.value == 'PENDING') {
                         response = store.getters['bill/recent_pending_bills'];
-                        console.log(response.data[0].products[0].name);
+                        //(response.data[0].products[0].name);
                     }
                     else if (status_bills.value == 'APPROVED') {
                         response = store.getters['bill/recent_approved_bills'];

@@ -225,7 +225,7 @@ import { Select, initTE } from "tw-elements";
                 new_total.value = total.value * voucher.value.value;
                 bill.total = new_total.value;
 
-                console.log(bill);
+                //(bill);
             }
 
             const deleteCartItems = async (item) => {

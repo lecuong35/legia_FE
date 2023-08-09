@@ -149,7 +149,7 @@
             };
 
             const handle_bill = async (id, bill, target_status) => {
-                console.log(id, bill, target_status);
+                //(id, bill, target_status);
                 await store.dispatch('bill/handleBill', [id, bill, target_status]).then(() => {
                     errors.value = store.getters['bill/errors'];
                 });

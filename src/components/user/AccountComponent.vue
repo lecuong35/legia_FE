@@ -99,14 +99,14 @@ import TextField from '../../components/TextField.vue';
                     avatar.value = user.value.avatar;
                     file_uploaded.value = user.value.avatar;
 
-                    console.log(files.value);
+                    //(files.value);
 
                     loaded.value = true;
                 })
             });
 
 			const getImageUrl = (image) => {
-                console.log(image[0]);
+                //(image[0]);
 				return `data:${image[0].type};base64,${image[0].data}`;
 			};
 
@@ -126,7 +126,7 @@ import TextField from '../../components/TextField.vue';
 				form_data.append("email", new_user.email);
 				form_data.append("location", new_user.location);
 
-				console.log(file_uploaded.value);
+				//(file_uploaded.value);
 
 
 				store.dispatch('user/userUpdateInfo', form_data);

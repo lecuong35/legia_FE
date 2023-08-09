@@ -129,7 +129,7 @@ const actions = {
 
     async updateVoucher({commit}, [id, voucher]) {
         try {
-            console.log("hello");
+            //("hello");
             await base_url.updateVoucher(id, voucher)
             .then((result) => {
                commit('UPDATE_VOUCHER', result.data);
@@ -152,10 +152,10 @@ const actions = {
             await base_url.getDefineVoucher(id)
             .then(result => {
                 commit('GET_DIFINE_VOUCHER', result.data);
-                console.log(result.data);
+                //(result.data);
             })
         } catch (error) {
-            console.log(error);
+            //(error);
         }
     },
 
@@ -177,7 +177,7 @@ const actions = {
     },
 
     async addVoucher({commit}, voucher) {
-        console.log(voucher);
+        //(voucher);
         try {
             await base_url.addVoucher(voucher)
             .then(() => {

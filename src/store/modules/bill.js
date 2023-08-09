@@ -241,7 +241,7 @@ const actions = {
         try {
             await base_url.userUpdateBill(bill);
         } catch (error) {
-            console.log(error.response.data.message);
+            //(error.response.data.message);
             commit('SET_ERRORS', error.response.data.message);
             toast.warning(error.response.data.message);
         }
